@@ -7,7 +7,7 @@
 }
 
 body {
-
+    background-color: rgb(133, 131, 131);
     font-family: 'Merriweather', serif;
 }
 header {
@@ -21,6 +21,7 @@ header {
     font-size: 55px;
     text-align: center;
     padding-top: 45px;
+    cursor:context-menu;
 }
 .links {
     padding-top: 30px;
@@ -30,11 +31,30 @@ header {
     text-align: center;
 }
 .links a {
-    margin-left: 30px;
-    margin-right: 30px;
     text-decoration: none;
+    color: rgb(51, 49, 49);
+    position: relative;
 }
 
-.links a :hover {
-    color: red;
+.links a + a {
+    margin-left: 32px;
 }
+.links a.active {
+    font-weight: bold;
+    color: rgb(167, 83, 4);
+}
+.links a:hover {
+    color: rgb(167, 83, 4);
+    transition: 200ms;
+}
+.links a:hover::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: rgb(167, 83, 4);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 300ms;
+}
+
