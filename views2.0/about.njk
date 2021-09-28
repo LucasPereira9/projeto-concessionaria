@@ -1,0 +1,31 @@
+{% extends "layout.njk" %}
+
+
+  {% block head %}
+
+    <title>layout - inicial</title>
+
+    {% endblock %}
+    
+{% block content %}
+
+    <div id="container">
+        
+        <img src="{{about.avatar_url}}" alt="Barcelona">
+        <h1>{{about.name}}</h1>
+        <h2>{{about.role}}</h2>
+        <p>{{about.description}}
+        </p>
+    </div>
+
+    <div id="sociais" class="links">
+
+        {% for link in about.links %}
+
+        <a href="{{ link.url }}" target="_blank">{{ link.name }}</a>
+
+        {% endfor %}
+
+    </div>
+
+{% endblock %}
