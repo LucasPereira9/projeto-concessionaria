@@ -62,7 +62,7 @@ header {
 .card {
     background-color: rgb(229, 226, 226);
     width: 900px;
-    height: 500px;
+    min-height: 500px;
     border-radius: 20px;
     margin: 45px auto;
     box-shadow: 5px 5px 20px black;
@@ -84,3 +84,45 @@ header {
     }
 }
 
+/* details */
+.details {
+    margin: 20px;
+}
+.details .item {
+    padding: 30px 0;
+    border-bottom: 1px solid  rgb(150, 147, 147);
+}
+.details .item:last-child {
+    border: none;
+}
+.details h3,
+.details .item div:nth-child(1) {
+    color:rgb(126, 119, 119);
+    font-size: 19px;
+    line-height: 24px;
+    letter-spacing: 0.7px;
+    font-weight: normal;
+    padding-bottom: 3px;
+}
+.details .item div:nth-child(2) {
+    font-size: 22px;
+    font-weight: bold;
+}
+.details h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color:rgb(37, 8, 199);
+    font-size: 23px;
+}
+.details .item span {
+    padding: 8px 16px;
+    background-color:black;
+    border-radius: 16px;
+    color: rgb(141, 138, 138);
+    display: inline-block;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-right: 6px;
+    margin-top: 8px;
+}
