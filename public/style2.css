@@ -59,4 +59,28 @@ header {
     width: 100%;
     transition: width 600ms ease-in-out;
 }
+.card {
+    background-color: rgb(229, 226, 226);
+    width: 900px;
+    height: 500px;
+    border-radius: 20px;
+    margin: 45px auto;
+    box-shadow: 5px 5px 20px black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    /*=== animation=== */
+
+    animation: up 700ms ease-in-out;
+}
+
+@keyframes up {
+    0% {
+        opacity: 0;
+        transform: translateY(30px)
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
