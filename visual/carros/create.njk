@@ -1,0 +1,50 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+    <form class="card" method="POST" action="/carros">
+        <section class="avatar" style= "border-radius: 10px; background: url(https://th.bing.com/th/id/R.0cb524aaefa7d4a498f7bc4bcef214de?rik=AQ4hF4TPQqLF2g&riu=http%3a%2f%2fmotosnovas.com.br%2fwp-content%2fuploads%2f2017%2f02%2fNovo-HB20-2018-4-1024x767.jpeg&ehk=wN27FHXGVTh%2fUrvOwG1FI18bb8eNhJnU7srhAlYqRFU%3d&risl=&pid=ImgRaw&r=0/500x500) no-repeat center center / cover"></section>
+        
+        <section class="details">
+
+            <h3>Novo Veículo</h3>
+
+              <div class="item">
+                <div>Avatar URL</div>
+                <div>
+                    <input  type="url"
+                            name="avatar_url" placeholder="Http://">
+                         </div>
+            </div>
+
+            <div class="item">
+                <div>Modelo do veiculo</div>
+                <div>
+                    <input  type="text"
+                            name="modelo" placeholder="Digite modelo e potencia. (ex: gol 1.0)">
+                         </div>
+            </div>
+                   <div class="item">
+                <div>Ano</div>
+                <div>
+                    <input  type="number" min=1 max=2021
+                            name="ano" placeholder="(ex: 2018/2018)">
+                </div>
+            </div>
+                   <div class="item">
+                <div>combustivel</div>
+                <div>
+                    <span><input type="radio" name="genero" value="G" checked>Gasolina</span>
+                    <span><input type="radio" name="genero" value="F">Flex</span>
+                </div>
+            </div>
+                   <div class="item">
+                <div>Opcionais</div>
+                <div>
+                    <input  type="text" 
+                            name="opcionais" placeholder="Separe os opcionais por Vírgula">
+                </div>
+            </div>
+          <button type="submit">Salvar</button>
+        </section>
+    </form>
+{% endblock content %}
