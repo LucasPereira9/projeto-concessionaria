@@ -1,3 +1,11 @@
 {
-  "carros": []
+  "carros": [
+    {
+      "avatar_url": "http://google.com",
+      "model": "hb20 2.0",
+      "year": "2019",
+      "fuel": "F",
+      "optional": "vidro eletrico, freio abs, ar condicionado"
+    }
+  ]
 }
