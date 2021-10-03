@@ -1,1 +1,18 @@
-{"avatar_url":"http://google.com","modelo":"gol 1.4","ano":"2012","genero":"F","opcionais":"air bag vidros eletricos freio abs"}
+{
+  "carros": [
+    {
+      "avatar_url": "http://google.com",
+      "modelo": "gol 1.4",
+      "ano": "2012",
+      "genero": "F",
+      "opcionais": "air bag vidros eletricos freio abs"
+    },
+    {
+      "avatar_url": "http://google.com",
+      "modelo": "hb20 2.0",
+      "ano": "2020",
+      "genero": "F",
+      "opcionais": "air bag vidros eletricos freio abs"
+    }
+  ]
+}
