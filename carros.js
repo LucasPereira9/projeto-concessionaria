@@ -9,7 +9,7 @@ exports.show = function(req, res) {
     })
     if (!foundcar) return res.send("Car Not Found!")
 
-    return res.send(foundcar)
+    return res.render("carros/show", { car : foundcar })
 }
 
 // create
