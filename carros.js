@@ -9,7 +9,19 @@ exports.post = function(req , res) {
      return res.send("preencha todos os campos!")
     }
 
-    data.carros.push(req.body)
+    let {avatar_url, model, year, fuel, optional, id} = req.body
+
+    const idd = Number(data.carros.length + 1)
+
+    data.carros.push ({
+        id,
+        avatar_url,
+        model,
+        year,
+        fuel,
+        optional
+    })
+
 
     fs.writeFile("data.json", JSON.stringify(data,  null, 2), function(err) {
         if (err) return res.send("write file error!")
