@@ -13,6 +13,8 @@ routes.get('/carros', function (req, res) {
  routes.get('/carros/create', function(req, res) {
     return res.render("carros/create")
  })
+
+ routes.get('/carros/:id', carros.show)
  
  routes.post('/carros', carros.post )
  
