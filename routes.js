@@ -1,6 +1,8 @@
 const express = require('express')
 const routes = express.Router()
 const carros = require("./carros")
+
+
 routes.get('/', function (req, res) {
    return res.redirect("carros")
 })

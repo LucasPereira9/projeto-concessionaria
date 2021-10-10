@@ -41,16 +41,16 @@ header {
 }
 .links a.active {
     font-weight: bold;
-    color:rgb(251, 255, 0);
+    color:rgb(214, 218, 28);
 }
 .links a:hover {
-    color: rgb(249, 253, 2);
+    color: rgb(233, 236, 39);
 }
 .links a::after {
     content: "";
     width: 0;
     height: 2px;
-    background-color:rgb(251, 255, 0);
+    background-color:rgb(214, 218, 28);
     position: absolute;
     left: 0;
     bottom: -6px;

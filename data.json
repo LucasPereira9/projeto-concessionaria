@@ -1,0 +1,18 @@
+{
+  "carros": [
+    {
+      "avatar_url": "http://google.com",
+      "model": "hb20 2.0",
+      "year": "2009",
+      "fuel": "F",
+      "optional": "vidro eletrico, freio abs, ar condicionado"
+    },
+    {
+      "avatar_url": "http://google.com",
+      "model": "gol 2.0",
+      "year": "2006",
+      "fuel": "G",
+      "optional": "vidro eletrico, freio abs, ar condicionado"
+    }
+  ]
+}

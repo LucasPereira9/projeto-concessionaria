@@ -1,5 +1,5 @@
 const fs = require('fs')
-
+const data = require('./data.json')
 // create
 exports.post = function(req , res) {
 
@@ -9,7 +9,9 @@ exports.post = function(req , res) {
      return res.send("preencha todos os campos!")
     }
 
-    fs.writeFile("data.json", JSON.stringify(req.body), function(err) {
+    data.carros.push(req.body)
+
+    fs.writeFile("data.json", JSON.stringify(data,  null, 2), function(err) {
         if (err) return res.send("write file error!")
 
         return res.redirect("/carros")
