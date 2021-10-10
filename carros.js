@@ -1,5 +1,17 @@
 const fs = require('fs')
 const data = require('./data.json')
+// show 
+exports.show = function(req, res) {
+    const { id } = req.params
+
+    const foundcar = data.carros.find (function(car){
+        return car.id == id
+    })
+    if (!foundcar) return res.send("Car Not Found!")
+
+    return res.render("carros/show", { car : foundcar })
+}
+
 // create
 exports.post = function(req , res) {
 
@@ -9,7 +21,18 @@ exports.post = function(req , res) {
      return res.send("preencha todos os campos!")
     }
 
-    data.carros.push(req.body)
+    let {avatar_url, year, optional, model, fuel} = req.body
+
+    const id = Number(data.carros.length + 1)
+
+    data.carros.push({
+        id,
+        avatar_url,
+        model,
+        year,
+        fuel,
+        optional
+    })
 
     fs.writeFile("data.json", JSON.stringify(data,  null, 2), function(err) {
         if (err) return res.send("write file error!")
