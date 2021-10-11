@@ -18,14 +18,14 @@
             </div>
                    <div class="item">
                 <div>combustivel</div>
-                <div>{{car.fuel}}</div>
+                <div>{{"Gasolina" if car.fuel == "G" else "Flex"}}</div>
             </div>
                    <div class="item">
                 <div>Opcionais</div>
                 <div>
             {% for option in car.optional %}
 
-                <span> {{ option }} </span> 
+                <span> {{option}} </span> 
 
              {% endfor %}
 
