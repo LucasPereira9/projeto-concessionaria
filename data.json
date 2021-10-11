@@ -23,6 +23,14 @@
       "year": "2021",
       "fuel": "F",
       "optional": "vidro eletrico, freio abs, ar condicionado"
+    },
+    {
+      "id": 4,
+      "avatar_url": "https://th.bing.com/th/id/R.4b5e244374a47dbcf51ff656a52be7d7?rik=DHfXWr%2bz3OkXGA&pid=ImgRaw&r=0",
+      "model": "Peugeot 208",
+      "year": "2021",
+      "fuel": "F",
+      "optional": "vidro eletrico, freio abs, ar condicionado, camera traseira, teto solar"
     }
   ]
 }
