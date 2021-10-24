@@ -15,9 +15,8 @@ routes.get('/carros', function (req, res) {
  })
 
  routes.get('/carros/:id', carros.show)
- routes.get('/carros/:id/edit', function(req,res) {
-    return res.render('carros/edit')
- })
+
+ routes.get('/carros/:id/edit', carros.edit)
 
  routes.post('/carros', carros.post )
  

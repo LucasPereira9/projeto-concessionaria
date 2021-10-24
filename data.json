@@ -31,6 +31,30 @@
       "year": "2021",
       "fuel": "F",
       "optional": "vidro eletrico, freio abs, ar condicionado, camera traseira, teto solar"
+    },
+    {
+      "id": 5,
+      "avatar_url": "http://www.dealeron.ru/images/News/peugeot-308-hatchback-2014_17.jpg",
+      "model": "Peugeot 208",
+      "year": "2021",
+      "fuel": "F",
+      "optional": "vidro eletrico, freio abs, ar condicionado, camera traseira, teto solar"
+    },
+    {
+      "id": 6,
+      "avatar_url": "http://www.dealeron.ru/images/News/peugeot-308-hatchback-2014_17.jpg",
+      "model": "Peugeot 208",
+      "year": "2021",
+      "fuel": "F",
+      "optional": "vidro eletrico, freio abs, ar condicionado, camera traseira, teto solar"
+    },
+    {
+      "id": 7,
+      "avatar_url": "http://www.dealeron.ru/images/News/peugeot-308-hatchback-2014_17.jpg",
+      "model": "Peugeot 208",
+      "year": "2019",
+      "fuel": "F",
+      "optional": "vidro eletrico, freio abs, ar condicionado, camera traseira, teto solar"
     }
   ]
 }

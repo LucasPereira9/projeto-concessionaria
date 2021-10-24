@@ -1,6 +1,8 @@
 const fs = require('fs')
 const data = require('./data.json')
-// show 
+
+
+//  show 
 exports.show = function(req, res) {
     const { id } = req.params
 
@@ -17,7 +19,7 @@ exports.show = function(req, res) {
     return res.render("carros/show", { car })
 }
 
-// create
+//  create
 exports.post = function(req , res) {
 
     const keys = Object.keys(req.body)
@@ -45,3 +47,17 @@ exports.post = function(req , res) {
         return res.redirect("/carros")
     })
   }
+
+  //  edit
+  exports.edit = function(req,res) {
+    const { id } = req.params
+
+    const foundcar = data.carros.find (function(car){
+        return car.id == id
+    })
+    if (!foundcar) return res.send("Car Not Found!")
+
+
+
+    return res.render('carros/edit', {carros: foundcar})
+ }

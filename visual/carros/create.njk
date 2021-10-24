@@ -10,43 +10,8 @@
 
             <h3>Novo Veículo</h3>
 
-              <div class="item">
-                <div>Avatar URL</div>
-                <div>
-                    <input  type="url"
-                            name="avatar_url" placeholder="Http://">
-                         </div>
-            </div>
+            {% include 'carros/fields.njk' %}
 
-            <div class="item">
-                <div>Modelo do veiculo</div>
-                <div>
-                    <input  type="text"
-                            name="model" placeholder="Digite modelo e potencia. (ex: gol 1.0)">
-                         </div>
-            </div>
-                   <div class="item">
-                <div>Ano</div>
-                <div>
-                    <input  type="number" min=1990 max=2021
-                            name="year" placeholder="(ex: 2018)">
-                </div>
-            </div>
-                   <div class="item">
-                <div>combustivel</div>
-                <div>
-                    <span><input type="radio" name="fuel" value="G" checked>Gasolina</span>
-                    <span><input type="radio" name="fuel" value="F">Flex</span>
-                </div>
-            </div>
-                   <div class="item">
-                <div>Opcionais</div>
-                <div>
-                    <input  type="text" 
-                            name="optional" placeholder="Separe os opcionais por Vírgula">
-                </div>
-            </div>
-          <button type="submit">Salvar</button>
         </section>
     </form>
 {% endblock content %}
