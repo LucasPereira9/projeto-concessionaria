@@ -2,7 +2,7 @@
   "carros": [
     {
       "id": 1,
-      "avatar_url": "http://google.com",
+      "avatar_url": "https://th.bing.com/th/id/R.0cb524aaefa7d4a498f7bc4bcef214de?rik=AQ4hF4TPQqLF2g&riu=http%3a%2f%2fmotosnovas.com.br%2fwp-content%2fuploads%2f2017%2f02%2fNovo-HB20-2018-4-1024x767.jpeg&ehk=wN27FHXGVTh%2fUrvOwG1FI18bb8eNhJnU7srhAlYqRFU%3d&risl=&pid=ImgRaw&r=0",
       "model": "peugeot 1.4",
       "year": "2007",
       "fuel": "F",
@@ -10,7 +10,7 @@
     },
     {
       "id": 2,
-      "avatar_url": "http://google.com",
+      "avatar_url": "https://automobile-assets.s3.amazonaws.com/automobile/body/volkswagen-gol-1995-2013-1486455869.46.jpeg",
       "model": "gol 2.0",
       "year": "2005",
       "fuel": "G",
@@ -26,7 +26,7 @@
     },
     {
       "id": 4,
-      "avatar_url": "https://th.bing.com/th/id/R.4b5e244374a47dbcf51ff656a52be7d7?rik=DHfXWr%2bz3OkXGA&pid=ImgRaw&r=0",
+      "avatar_url": "http://www.dealeron.ru/images/News/peugeot-308-hatchback-2014_17.jpg",
       "model": "Peugeot 208",
       "year": "2021",
       "fuel": "F",

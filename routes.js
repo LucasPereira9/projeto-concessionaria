@@ -15,11 +15,14 @@ routes.get('/carros', function (req, res) {
  })
 
  routes.get('/carros/:id', carros.show)
- 
+ routes.get('/carros/:id/edit', function(req,res) {
+    return res.render('carros/edit')
+ })
+
  routes.post('/carros', carros.post )
  
-routes.get('/vendedores', function (req, res) {
-    return res.send('msdasdembers')
+ routes.get('/vendedores', function (req, res) {
+    return res.send('MANUTENÇÃO')
  })
 
 module.exports = routes
